@@ -4,6 +4,13 @@ video.load();
 video.autoplay = false;
 video.loop = false;
 
+document.getElementById("play").addEventListener("click", playVid)
+document.getElementById("pause").addEventListener("click", pauseVid)
+document.getElementById("slower").addEventListener("click", slowDown)
+document.getElementById("faster").addEventListener("click", speedUp)
+document.getElementById("skip").addEventListener("click", skipForward)
+document.getElementById("mute").addEventListener("click", muteVid)
+
 function playVid() {
     video.play();
 }
